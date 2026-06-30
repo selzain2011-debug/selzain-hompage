@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELZAIN | 디자인 전문회사</title>
+    <title>SELZAIN | 가치를 시각화하는 디자인 전문회사</title>
     <style>
-        body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #111; color: #fff; }
-        header { padding: 40px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
-        nav a { color: #aaa; margin-left: 20px; text-decoration: none; }
-        .hero { height: 70vh; display: flex; flex-direction: column; justify-content: center; padding: 0 40px; }
-        .hero h1 { font-size: 64px; margin: 0 0 20px 0; line-height: 1.2; }
-        .hero p { font-size: 20px; color: #888; max-width: 600px; }
-        .portfolio { padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .project { background: #222; height: 250px; display: flex; align-items: center; justify-content: center; border: 1px solid #333; }
-        footer { padding: 40px; text-align: center; color: #444; border-top: 1px solid #222; }
+        body { margin: 0; font-family: 'Pretendard', sans-serif; background: #0b0b0b; color: #ffffff; line-height: 1.6; }
+        header { padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1a1a1a; }
+        .logo { font-size: 26px; font-weight: 800; letter-spacing: 3px; }
+        nav a { color: #999; margin-left: 30px; text-decoration: none; font-size: 15px; transition: color 0.3s; }
+        nav a:hover { color: #fff; }
+        .hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; padding: 0 50px; max-width: 900px; }
+        .hero h1 { font-size: 52px; font-weight: 700; margin-bottom: 30px; line-height: 1.3; letter-spacing: -1px; }
+        .hero p { font-size: 20px; color: #b3b3b3; line-height: 1.7; }
+        .services { padding: 80px 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; border-top: 1px solid #1a1a1a; }
+        .service-card { background: #121212; padding: 40px 30px; border-radius: 8px; border: 1px solid #222; }
+        .service-card h3 { font-size: 22px; margin-top: 0; color: #fff; }
+        .service-card p { color: #888; font-size: 14px; margin-bottom: 0; }
+        footer { padding: 50px; text-align: center; color: #555; border-top: 1px solid #1a1a1a; font-size: 14px; }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">SELZAIN</div>
-        <nav>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <nav><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>We Design<br>Digital Experiences.</h1>
-            <p>셀자인은 가치를 시각화하는 디자인 전문회사입니다. 브랜드의 아이덴티티를 정교한 디자인으로 구축합니다.</p>
+        <section class="hero" id="about">
+            <h1>셀자인은 가치를 시각화하는<br>디자인 전문회사입니다.</h1>
+            <p>브랜드의 본질과 가치를 시각적으로 정립하고, 시장과 소비자에게 효과적으로 전달하는 통합 디자인 솔루션을 제공합니다.</p>
         </section>
-        <section class="portfolio" id="work">
-            <div class="project">Project 01</div>
-            <div class="project">Project 02</div>
-            <div class="project">Project 03</div>
+        <section class="services" id="services">
+            <div class="service-card">
+                <h3>CI & BI 개발</h3>
+                <p>기업과 브랜드의 정체성을 정립하고 이미지 통합 작업을 구축합니다.</p>
+            </div>
+            <div class="service-card">
+                <h3>패키지 디자인</h3>
+                <p>브랜드 적용물 및 제품의 정체성을 담은 패키지 시스템을 설계합니다.</p>
+            </div>
+            <div class="service-card">
+                <h3>콘텐츠 & 컨설팅</h3>
+                <p>캐릭터, 편집디자인부터 홍보·마케팅 디자인까지 시각 커뮤니케이션 전반을 제공합니다.</p>
+            </div>
         </section>
     </main>
     <footer id="contact">
-        <p>&copy; 2026 SELZAIN. All rights reserved. info@selzain.com</p>
+        <p>&copy; 2026 SELZAIN. All rights reserved. | info@selzain.com</p>
     </footer>
 </body>
 </html>
