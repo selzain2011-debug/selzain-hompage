@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELZAIN | 가치를 시각화하는 디자인 전문회사</title>
+    <title>SELZAIN | 디자인 스튜디오</title>
     <style>
-        body { margin: 0; font-family: 'Pretendard', sans-serif; background: #0b0b0b; color: #ffffff; line-height: 1.6; }
-        header { padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1a1a1a; }
-        .logo { font-size: 26px; font-weight: 800; letter-spacing: 3px; }
-        nav a { color: #999; margin-left: 30px; text-decoration: none; font-size: 15px; transition: color 0.3s; }
+        body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #050505; color: #fff; }
+        header { padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; fixed: top; }
+        .logo { font-size: 22px; font-weight: 900; letter-spacing: 5px; }
+        nav a { color: #555; margin-left: 30px; text-decoration: none; font-size: 14px; text-transform: uppercase; transition: 0.3s; }
         nav a:hover { color: #fff; }
-        .hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; padding: 0 50px; max-width: 900px; }
-        .hero h1 { font-size: 52px; font-weight: 700; margin-bottom: 30px; line-height: 1.3; letter-spacing: -1px; }
-        .hero p { font-size: 20px; color: #b3b3b3; line-height: 1.7; }
-        .services { padding: 80px 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; border-top: 1px solid #1a1a1a; }
-        .service-card { background: #121212; padding: 40px 30px; border-radius: 8px; border: 1px solid #222; }
-        .service-card h3 { font-size: 22px; margin-top: 0; color: #fff; }
-        .service-card p { color: #888; font-size: 14px; margin-bottom: 0; }
-        footer { padding: 50px; text-align: center; color: #555; border-top: 1px solid #1a1a1a; font-size: 14px; }
+        .hero { height: 80vh; display: flex; align-items: flex-end; padding: 60px; box-sizing: border-box; }
+        .hero h1 { font-size: 8vw; font-weight: 700; line-height: 0.9; margin: 0; letter-spacing: -3px; text-transform: uppercase; }
+        .intro-box { padding: 100px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; border-top: 1px solid #222; }
+        .intro-box p { font-size: 24px; line-height: 1.6; color: #999; margin: 0; }
+        .intro-box p strong { color: #fff; }
+        .work-grid { padding: 20px 60px 100px 60px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 40px; }
+        .card { background: #111; min-height: 400px; display: flex; align-items: flex-end; padding: 30px; box-sizing: border-box; border: 1px solid #1a1a1a; transition: 0.4s; }
+        .card:hover { border-color: #555; background: #151515; }
+        .w-7 { grid-column: span 7; } .w-5 { grid-column: span 5; }
+        .card h3 { font-size: 28px; font-weight: 500; margin: 0; }
+        footer { padding: 60px; border-top: 1px solid #222; text-align: space-between; display: flex; color: #333; font-size: 14px; }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">SELZAIN</div>
-        <nav><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+        <nav><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
     </header>
     <main>
-        <section class="hero" id="about">
-            <h1>셀자인은 가치를 시각화하는<br>디자인 전문회사입니다.</h1>
-            <p>브랜드의 본질과 가치를 시각적으로 정립하고, 시장과 소비자에게 효과적으로 전달하는 통합 디자인 솔루션을 제공합니다.</p>
+        <section class="hero">
+            <h1>We Shape<br>The Value.</h1>
         </section>
-        <section class="services" id="services">
-            <div class="service-card">
-                <h3>CI & BI 개발</h3>
-                <p>기업과 브랜드의 정체성을 정립하고 이미지 통합 작업을 구축합니다.</p>
-            </div>
-            <div class="service-card">
-                <h3>패키지 디자인</h3>
-                <p>브랜드 적용물 및 제품의 정체성을 담은 패키지 시스템을 설계합니다.</p>
-            </div>
-            <div class="service-card">
-                <h3>콘텐츠 & 컨설팅</h3>
-                <p>캐릭터, 편집디자인부터 홍보·마케팅 디자인까지 시각 커뮤니케이션 전반을 제공합니다.</p>
-            </div>
+        <section class="intro-box" id="about">
+            <p><strong>셀자인</strong>은 브랜드의 본질을 정교한 시각 언어로 정립하는 통합 디자인 솔루션 스튜디오입니다.</p>
+            <p style="font-size: 16px; color: #555;">CI·BI 개발부터 패키지 구조, 캐릭터, 편집 디자인, 마케팅 비주얼까지 브랜드 성장에 필수적인 시각 커뮤니케이션 전반을 설계합니다.</p>
+        </section>
+        <section class="work-grid" id="work">
+            <div class="card w-7"><h3>CI & BI System</h3></div>
+            <div class="card w-5"><h3>Package Design</h3></div>
+            <div class="card w-5"><h3>Character Design</h3></div>
+            <div class="card w-7"><h3>Editorial System</h3></div>
         </section>
     </main>
     <footer id="contact">
-        <p>&copy; 2026 SELZAIN. All rights reserved. | info@selzain.com</p>
+        <div>&copy; 2026 SELZAIN.</div>
+        <div>info@selzain.com</div>
     </footer>
 </body>
 </html>
